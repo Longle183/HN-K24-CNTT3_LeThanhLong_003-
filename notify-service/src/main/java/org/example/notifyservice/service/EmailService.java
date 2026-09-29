@@ -20,6 +20,14 @@ public class EmailService {
     }
 
     public void sendEnrollmentCreatedEmail(String recipient) {
-        throw new UnsupportedOperationException();
+        if (!StringUtils.hasText(recipient)) {
+            throw new IllegalArgumentException("Recipient must not be blank");
+        }
+        SimpleMailMessage message = new SimpleMailMessage();
+        message.setFrom(from);
+        message.setTo(recipient.trim());
+        message.setSubject("Đăng ký khóa học thành công");
+        message.setText("Bạn đã đăng ký khóa học thành công!");
+        mailSender.send(message);
     }
 }

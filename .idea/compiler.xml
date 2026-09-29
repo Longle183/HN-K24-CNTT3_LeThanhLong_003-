@@ -5,10 +5,10 @@
       <profile name="Gradle Imported" enabled="true">
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
-          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.46/a5cfe99fdf320e84955ef653f2ce1bf789d11385/lombok-1.18.46.jar" />
+          <entry name="$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.46/a5cfe99fdf320e84955ef653f2ce1bf789d11385/lombok-1.18.46.jar" />
         </processorPath>
-        <module name="course-service.main" />
-        <module name="course-service.test" />
+        <module name="notify-service.main" />
+        <module name="notify-service.test" />
       </profile>
     </annotationProcessing>
   </component>
@@ -17,18 +17,18 @@
       <module name="api-gateway" options="-parameters" />
       <module name="api-gateway.main" options="-parameters" />
       <module name="api-gateway.test" options="-parameters" />
+      <module name="course-service" options="-parameters" />
+      <module name="course-service.main" options="-parameters" />
+      <module name="course-service.test" options="-parameters" />
+      <module name="enrollment-service" options="-parameters" />
+      <module name="enrollment-service.main" options="-parameters" />
+      <module name="enrollment-service.test" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="eureka-server.main" options="-parameters" />
       <module name="eureka-server.test" options="-parameters" />
       <module name="notify-service" options="-parameters" />
       <module name="notify-service.main" options="-parameters" />
       <module name="notify-service.test" options="-parameters" />
-      <module name="enrollment-service" options="-parameters" />
-      <module name="enrollment-service.main" options="-parameters" />
-      <module name="enrollment-service.test" options="-parameters" />
-      <module name="course-service" options="-parameters" />
-      <module name="course-service.main" options="-parameters" />
-      <module name="course-service.test" options="-parameters" />
     </option>
   </component>
 </project>

@@ -10,13 +10,17 @@ import org.springframework.util.StringUtils;
 @Component
 public class EnrollmentCreatedConsumer {
 
+    private static final Logger log = LoggerFactory.getLogger(EnrollmentCreatedConsumer.class);
     private final EmailService emailService;
 
     public EnrollmentCreatedConsumer(EmailService emailService) {
         this.emailService = emailService;
     }
 
+    @KafkaListener(topics = "${notification.kafka.enrollment-created-topic:enrollment-created}")
     public void consume(String email) {
-        throw new UnsupportedOperationException();
+        if (StringUtils.hasText(email)) {
+            emailService.sendEnrollmentCreatedEmail(email);
+        }
     }
 }
